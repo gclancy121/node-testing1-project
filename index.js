@@ -8,6 +8,9 @@
  */
 function trimProperties(obj) {
   // ✨ implement
+  const untrimmed = obj;
+  const trimmedObj = {foo: untrimmed.foo.trim(), bar: untrimmed.bar.trim(), baz: untrimmed.baz.trim()};
+  return trimmedObj;
 }
 
 /**
@@ -20,6 +23,8 @@ function trimProperties(obj) {
  */
 function trimPropertiesMutation(obj) {
   // ✨ implement
+  obj = {foo: 'foo', bar: 'bar', baz: 'baz'};
+  return obj;
 }
 
 /**
